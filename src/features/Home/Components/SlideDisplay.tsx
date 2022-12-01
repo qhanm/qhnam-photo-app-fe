@@ -6,11 +6,13 @@ const cx = classNames.bind(styles);
 
 interface Props {
     position: 'left' | 'right',
+    onClick: Function|any,
 }
 
-const SlideDisplay : React.FC<Props> = ({ position }) => {
+const SlideDisplay : React.FC<Props> = ({ position, onClick }) => {
     return (
         <div
+            onClick={onClick}
             className={
                 cx(
                     'slide-display',

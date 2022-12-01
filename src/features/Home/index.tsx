@@ -1,25 +1,17 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import styles from "./index.module.css";
 import classNames from "classnames/bind";
 import Heading2 from "../../components/composite/Heading/Heading2";
 import Heading5 from "../../components/composite/Heading/Heading5";
-import Item from "./Components/Item";
+import Discover from "./Components/Discover";
 import BrowserItems from "./Components/BrowserItems";
 import Button from "../../components/base/Button";
 import {loadDiscover} from "./api";
+import {PhotoInterface} from "../../interfaces/Models/PhotoInterface";
 
 const cx = classNames.bind(styles);
 
 const Home = () => {
-
-    useEffect(() => {
-        fetchData().then();
-    }, [])
-
-    const fetchData = async () => {
-        const res: any = await loadDiscover();
-        console.log('res', res)
-    }
 
     return (
         <div className={cx('wrapper')}>
@@ -27,7 +19,7 @@ const Home = () => {
             <div className={cx('spacing-x2')}>
                 <Heading5>What’s new today</Heading5>
             </div>
-            <Item />
+            <Discover />
 
             <div className={cx('spacing-x2')}>
                 <Heading5>Browse all</Heading5>
