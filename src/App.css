@@ -1,39 +1,64 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+:root {
+  --light: white;
+  --dark: black;
+  --danger: #ef4444;
+
+  --radius: 0px;
+  --spacing: 14px;
+  --element-height: 52px;
+  --height: 707px;
+  --line-color: #cccccc;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+html{
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  font-size: 14px;
 }
 
-.App-header {
-  min-height: 100vh;
+.wrapper{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .1);
+}
+.site-container {
+  width: 375px;
+  height: 707px;
+  /*width: 26.7rem;*/
+  /*height: 58rem;*/
+  background-color: var(--light);
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+::-webkit-scrollbar {
+  width: 2px;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+::-webkit-scrollbar-track {
+  background-color: var(--light);
 }
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark);
+}
+
+.p { padding: var(--spacing); }
+.pt { padding-top: var(--spacing); }
+.pl { padding-left: var(--spacing); }
+.pr { padding-right: var(--spacing); }
+.pb { padding-bottom: var(--spacing); }
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+.pointer { cursor: pointer; }
+.text-danger { color: var(--danger); }

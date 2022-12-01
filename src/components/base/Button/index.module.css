@@ -1,0 +1,38 @@
+.btn {
+    border: none;
+    height: 52px;
+    width: 100%;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-dark {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.btn-dark-outline {
+    border: 2px var(--dark) solid;
+    background-color: transparent;
+    color: var(--dark);
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.icon-loading {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

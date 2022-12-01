@@ -1,0 +1,11 @@
+.container {
+    padding: var(--spacing);
+}
+
+.container:last-child {
+    padding: 0 var(--spacing) var(--spacing);
+}
+
+.container:first-child {
+    padding: 0 var(--spacing) 0 var(--spacing);
+}

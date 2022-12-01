@@ -1,0 +1,55 @@
+.wrapper-auth-layout {
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/images/bg-login.jpg");
+    background-repeat: no-repeat;
+}
+
+.wrapper-home-layout{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.relative {
+    position: relative;
+    /*height: 100%;*/
+}
+
+.footer-menu {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+
+    width: 100%;
+    height: var(--element-height);
+    position: sticky;
+    bottom: 0;
+}
+
+.footer-menu div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    color: var(--light);
+    opacity: .8;
+    background-color: var(--dark);
+}
+
+.btn-add {
+    height: 40px !important;
+    width: 60px;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto;
+    color: var(--light);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}

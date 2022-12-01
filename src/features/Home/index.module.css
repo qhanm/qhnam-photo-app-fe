@@ -1,0 +1,89 @@
+
+.wrapper {
+    padding: var(--spacing);
+}
+
+.spacing-x2 {
+    padding: calc(var(--spacing) * 2) 0;
+}
+
+.spacing {
+    padding: var(--spacing) 0 0 0;
+}
+
+.item {
+    width: 343px;
+    height: 343px;
+    position: relative;
+    transition: bottom 5000ms ease-in-out;
+}
+
+.transition .slide.left{left:0%}
+.transition .slide.right{right:0%}
+
+/**
+ * The following classes slide the previously active
+ * slide out of view before positioning behind the
+ * currently active slide
+ *
+ */
+.transition .slide.shift-right{right: 100%;left:auto}
+.transition .slide.shift-left{left: 100%;right:auto}
+
+.item-avatar {
+    padding: calc(var(--spacing) / 2) 0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.hashtag {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+/** Slide display */
+.slide-display {
+    position: absolute;
+    width: var(--element-height);
+    height: var(--element-height);
+    background-color: var(--dark);
+    opacity: .7;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;justify-content: center;
+}
+
+.slide-display:hover{
+    background-color: var(--dark);
+    opacity: .5;
+}
+
+.slide-display-left {
+    top: 45%;
+}
+
+.slide-display-right {
+    right: 0;
+    top: 45%;
+}
+
+.browser-items{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: var(--spacing);
+}
+
+.browser-item {
+    display: inline-flex;
+    /*grid-template-columns: auto auto;*/
+
+    /*width: 167px;*/
+    /*height: 310px;*/
+}
+
+/*.odd {*/
+/*    height: 70%;*/
+/*    width: 100%;*/
+/*}*/

@@ -1,0 +1,22 @@
+.wrapper {
+    min-height: calc(var(--height) - var(--element-height));
+}
+
+.heading {
+    border-bottom: 1px solid var(--line-color);
+}
+
+.item {
+    padding: var(--spacing);
+
+    display: flex;
+    align-items: center;
+    gap: var(--spacing);
+
+    border-bottom: 1px solid var(--line-color);
+}
+
+.author {
+    font-weight: bold;
+    font-size: 1.1rem;
+}

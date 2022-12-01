@@ -1,0 +1,13 @@
+
+.wrapper {
+    height: 100%;
+    padding-top: var(--spacing);
+}
+
+.heading {
+    padding: calc(var(--spacing)) var(--spacing) 0 var(--spacing);
+}
+
+.spacing-x2 {
+    padding: var(--spacing) var(--spacing) 0 var(--spacing);
+}
