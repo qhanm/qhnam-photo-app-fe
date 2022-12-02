@@ -25,10 +25,6 @@ const Home = () => {
                 <Heading5>Browse all</Heading5>
             </div>
             <BrowserItems />
-
-            <div className={cx('spacing')}>
-                <Button type={'btn-dark-outline'} content={'See more'}/>
-            </div>
         </div>
     )
 }

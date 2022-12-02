@@ -69,6 +69,8 @@
 }
 
 .browser-item {
+    width: 100%;
+    height: calc((var(--width) - (var(--spacing) * 3)) / 2);
     display: inline-flex;
     /*grid-template-columns: auto auto;*/
 

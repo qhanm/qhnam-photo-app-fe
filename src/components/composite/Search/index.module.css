@@ -1,0 +1,40 @@
+/*@import "../../base/Input/index.module.css";*/
+
+.wrapper {
+    border: 2px solid var(--dark);
+    display: flex;
+}
+
+.form-group{
+    /*display: flex;*/
+    position: relative;
+    width: 100%;
+}
+
+.input-icon-search {
+    position: absolute;
+    right: 0;
+    top: 40%;
+}
+
+
+
+.input {
+    background-color: #ef4444;
+    /*padding: 0 var(--spacing);*/
+    /*margin: 0;*/
+    height: var(--element-height);
+    /*font-size: 1.2rem;*/
+    width: 100%;
+    box-sizing: border-box;
+    /*background: transparent;*/
+    border: none;
+    color: 2px solid var(--dark);
+    border-radius: var(--radius);
+    outline: none;
+}
+
+.search-icon{
+    width: auto;
+    margin: auto 14px;
+}

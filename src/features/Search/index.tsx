@@ -3,9 +3,9 @@ import styles from "./index.module.css";
 import classNames from "classnames/bind";
 import Heading2 from "../../components/composite/Heading/Heading2";
 import Button from "../../components/base/Button";
-import Input from "../../components/base/Input";
 import Grid from "../../components/composite/Grid";
 import Heading5 from "../../components/composite/Heading/Heading5";
+import SearchInput from "../../components/composite/Search";
 
 const cx = classNames.bind(styles);
 
@@ -16,7 +16,8 @@ const Search = () => {
                 <Heading2>Search</Heading2>
             </Grid>
             <Grid>
-                <Input placeholder={"Search all photo"} />
+                <SearchInput />
+                {/*<Input placeholder={"Search all photo"} />*/}
             </Grid>
 
             <div className={cx('spacing-x2')}>

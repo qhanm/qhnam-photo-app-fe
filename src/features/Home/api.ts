@@ -8,3 +8,12 @@ export const loadDiscover = async () => {
 
     return [];
 }
+
+export const loadPhoto = async (filter: any) => {
+    try {
+        const res = await PhotoApi.photo(filter);
+        return  res?.data;
+    }catch (err){}
+
+    return null;
+}
